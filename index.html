@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .product-card {
+        height: 440px;
+        width: 400px;
+        margin: 10px 20px;
+        border: 2px solid #6fdc6f;
+        box-shadow: 0 0 10px rgba(0 0 0 0.5);
+        border-radius: 10px;
+
+    }
+
+    .product-img {
+        width: 100%;
+        margin: 0px auto;
+        display: block;
+        border-radius: 10px 10px 0 0;
+        height: 200px;
+        object-fit: cover;
+
+
+    }
+
+    .product-title {
+        text-align: center;
+    }
+
+    .product-description {
+        text-align: justify;
+        padding: 0px 10px;
+    }
+
+    .product-btn {
+        display: block;
+        margin: 0 auto;
+        font-size: 25px;
+        padding: 5px 25px;
+        background-color: #d6f5d6;
+        border-radius: 50px;
+        border: none;
+
+    }
+    .navbar{
+        background-color: black;
+        color: white;
+        padding: 10px;
+      
+        position: sticky;
+        width: 100%;
+        top:0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+    }
+    .menu{
+        margin-left: 700px;
+    }
+    .search{
+        margin-left: 100px;
+    }
+    .Animal-logo{
+        height: 50px;
+    }
+    .brand{
+        display: flex;
+        align-items: center;
+    }
+    .menu-item{
+        color: #fff;
+        text-decoration: none;
+        font-size:20px;
+        margin: 0 10px;
+    }
+    .menu-item:hover{
+        text-decoration: underline;
+    }
+    .search-box{
+        padding: 5px 20px;
+        border-radius: 30px;
+        border: none;
+        margin-left: 200px;
+    }
+    .menu-icon{
+        height:50px;
+       display: none;
+    }
+    /*Mobile*/
+    @media(max-width:700px) {
+        .product-title {
+            text-align: left;
+            padding-left: 20px;
+            font-size: 22px;
+        }
+
+        .product-card {
+            width: 400px;
+            height: 400px;
+
+        }
+
+        .product-btn {
+            font-size: 20px;
+            padding: 5px 30px;
+        }
+
+        .product-description {
+            padding: 0 20px;
+            font-size: 16px;
+        }
+
+        .container {
+            background-color: red;
+        }
+        .search-box{
+        display: none;
+    }
+    .menu{
+        display:none ;
+    }
+    .menu-icon{
+        display: block;
+        margin-left: auto;
+        margin-right:50px;
+    }
+
+    }
+   
+    /*Tablet*/
+    @media(min-width:700px) and (max-width:1300px) {
+        .container{
+            background-color: aqua;
+         }
+
+        .product-card{
+          height: 410px;
+          width: 290px;
+        }
+        .product-title{
+            font-size: 24px;
+        }
+        .product-description{
+            font-size: 16px;
+
+        }
+        .product-btn{
+            font-size:20px; 
+            padding: 5px 30px;
+        }
+        .search-box{
+        display: none;
+    }
+     .navbar{
+        background-color: tomato;
+    }
+    .menu{
+        margin-left: 150px;
+    }
+
+    }
+
+   /*Laptop*/
+   @media  (min-width:1025px) and (max-width: 1524px){
+    .menu{
+        margin-left: 400px;
+    }
+   
+   }
+</style>
+
+<body>
+    <div class="navbar">
+      <div class="brand">
+        <img src="css/livestock.png" class="Animal-logo" alt="logo">
+        <h2>Indian Animal</h2>
+      </div>
+      
+      <div class="menu">
+        <a href="#" class="menu-item">Home</a>
+        <a href="#" class="menu-item">About</a>
+        <a href="#" class="menu-item">Contact</a>
+      </div>
+      <div class="search">
+        <input type="text"  placeholder="search" class="search-box">
+      </div>
+      <img src="css/menu.png" class="menu-icon"/>
+    </div>
+        <h1>Indian Animal</h1>
+    <div class="container">
+        <div class="product-card">
+            <img src="css/1137.jpg" class="product-img" alt=" imgg">
+            <h1 class="product-title">Tiger</h1>
+            <p class="product-description">The tiger (Panthera tigris) is a large cat and a member of the genus Panthera
+                native to Asia. It has a
+                powerful, muscular body with a large head and paws, ...</p>
+            <button class="product-btn">KnowMore</button>
+        </div>
+
+        <div class="product-card">
+            <img src="css/1137.jpg" class="product-img" alt=" imgg">
+            <h1 class="product-title">Tiger</h1>
+            <p class="product-description">The tiger (Panthera tigris) is a large cat and a member of the genus Panthera
+                native to Asia. It has a
+                powerful, muscular body with a large head and paws, ...</p>
+            <button class="product-btn">KnowMore</button>
+        </div>
+
+        <div class="product-card">
+            <img src="css/1137.jpg" class="product-img" alt=" imgg">
+            <h1 class="product-title">Tiger</h1>
+            <p class="product-description">The tiger (Panthera tigris) is a large cat and a member of the genus Panthera
+                native to Asia. It has a
+                powerful, muscular body with a large head and paws, ...</p>
+            <button class="product-btn">KnowMore</button>
+        </div>
+
+        <div class="product-card">
+            <img src="css/1137.jpg" class="product-img" alt=" imgg">
+            <h1 class="product-title">Tiger</h1>
+            <p class="product-description">The tiger (Panthera tigris) is a large cat and a member of the genus Panthera
+                native to Asia. It has a
+                powerful, muscular body with a large head and paws, ...</p>
+            <button class="product-btn">KnowMore</button>
+        </div>
+
+        <div class="product-card">
+            <img src="css/1137.jpg" class="product-img" alt=" imgg">
+            <h1 class="product-title">Tiger</h1>
+            <p class="product-description">The tiger (Panthera tigris) is a large cat and a member of the genus Panthera
+                native to Asia. It has a
+                powerful, muscular body with a large head and paws, ...</p>
+            <button class="product-btn">KnowMore</button>
+        </div>
+
+        <div class="product-card">
+            <img src="css/1137.jpg" class="product-img" alt=" imgg">
+            <h1 class="product-title">Tiger</h1>
+            <p class="product-description">The tiger (Panthera tigris) is a large cat and a member of the genus Panthera
+                native to Asia. It has a
+                powerful, muscular body with a large head and paws, ...</p>
+            <button class="product-btn">KnowMore</button>
+        </div>
+
+        <div class="product-card">
+            <img src="css/1137.jpg" class="product-img" alt=" imgg">
+            <h1 class="product-title">Tiger</h1>
+            <p class="product-description">The tiger (Panthera tigris) is a large cat and a member of the genus Panthera
+                native to Asia. It has a
+                powerful, muscular body with a large head and paws, ...</p>
+            <button class="product-btn">KnowMore</button>
+        </div>
+
+
+        <div class="product-card">
+            <img src="css/1137.jpg" class="product-img" alt=" imgg">
+            <h1 class="product-title">Tiger</h1>
+            <p class="product-description">The tiger (Panthera tigris) is a large cat and a member of the genus Panthera
+                native to Asia. It has a
+                powerful, muscular body with a large head and paws, ...</p>
+            <button class="product-btn">KnowMore</button>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
