@@ -1,0 +1,187 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+.product-card {
+    height: 69vh;
+    width:50vh;
+    margin: 10px 0px;
+    border: 2px solid #6fdc6f;
+    box-shadow: 0 0 10px rgba(0 0 0 0.5);
+    border-radius: 10px;
+
+}
+
+.product-img {
+    width: 100%;
+    margin: 0px auto;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+
+
+}
+
+.product-title {
+    text-align: center;
+}
+
+.product-description {
+    text-align: justify;
+    padding: 0px 10px;
+}
+
+.product-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
+    padding: 5px 25px;
+    background-color: #d6f5d6;
+    border-radius: 50px;
+    border: none;
+
+}
+.header{
+    background-color: black;
+    color: white;
+    padding: 10px;
+  
+    position: sticky;
+    width: 100%;
+    top:0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    
+    display: flex;
+}
+.search{
+    width: 30px;
+    
+}
+.Animal-logo{
+    height: 50px;
+    margin: 0px 2vh;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    margin-right: 22vw; 
+}
+.menu-item{
+    color: #fff;
+    text-decoration: none;
+    font-size:20px;
+    margin-right: 11vh;
+}
+.menu-item:hover{
+    text-decoration: underline;
+}
+.search-box{
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    
+    margin-left: 10vw;
+    
+}
+.menu-icon{
+    height:50px;
+   display: none;
+}
+/*Mobile*/
+@media(max-width:600px) {
+    .product-title {
+        text-align: left;
+        padding-left: 20px;
+        font-size: 22px;
+    }
+
+    .product-card {
+        width: 400px;
+        height: 400px;
+
+    }
+
+    .product-btn {
+        font-size: 20px;
+        padding: 5px 30px;
+    }
+
+    .product-description {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .search-box{
+    display: none;
+}
+.menu{
+    display:none ;
+    margin-right: 20vh;
+}
+.menu-icon{
+    display: block;
+    margin-left: auto;
+    margin-right:50px;
+}
+.heading{
+    font-size: 20px;
+    height: 20px;
+    width:15px;
+    margin:0px auto;
+}
+
+}
+
+/*Tablet*/
+@media(min-width:601px) and (max-width:900px) {
+    
+
+    .product-card{
+      height: 410px;
+      width: 290px;
+    }
+    .product-title{
+        font-size: 24px;
+    }
+    .product-description{
+        font-size: 16px;
+
+    }
+    .product-btn{
+        font-size:20px; 
+        padding: 5px 30px;
+    }
+    .search-box{
+    display: none;
+}
+ .navbar{
+    background-color: tomato;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    margin-left: none;
+}
+
+}
+
+/*Laptop*/
+@media  (min-width:901px) and (max-width: 1024px){
+.menu{
+    margin-left: none;
+}
+
+}
